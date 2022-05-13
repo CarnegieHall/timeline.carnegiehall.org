@@ -1,0 +1,80 @@
+:root {
+  /** Typography */
+  --font-size-xxs: 0.625rem;
+  --line-height-xxs: 1.15rem;
+  --font-size-xsm: 0.6875rem;
+  --line-height-xsm: 0.9375rem;
+  --font-size-sm: 0.8594rem;
+  --line-height-sm: 1.25rem;
+  --font-size-lg: 1.1094rem;
+  --line-height-lg: 1.7rem;
+  --font-size-2lg: 1.1875rem;
+  --line-height-2lg: 1.75rem;
+  --font-size-xl: 1.375rem;
+  --line-height-xl: 2.375rem;
+  --font-size-1xl: 1.5rem;
+  --line-height-1xl: 1.8125rem;
+  --font-size-2xl: 1.625rem;
+  --line-height-2xl: 1.8125rem;
+
+  /* Colours */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-black-light: #16140e;
+  --color-green: #17a159;
+  --color-red: #cf1126;
+  --color-red-700: #b81c1c;
+  --color-blue-300: #c0d3e5;
+  --color-blue: #203298;
+  --color-purple: #a61da9;
+  --color-grey-50: #f8f7f4;
+  --color-grey-100: #f2f0ea;
+  --color-grey-300: #e9e6dc;
+  --color-grey-500: #dad9d7;
+  --color-grey-700: #989690;
+  --color-grey-900: #797771;
+
+  /* Layout */
+  --content-max-width: 92rem;
+  --page-gutter: 18px;
+  --grid-page: var(--page-gutter) minmax(0, 1fr) var(--page-gutter);
+
+  /** UI */
+  --card-shadow-color: rgba(182, 182, 182, 0.75);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --font-size-xxs: 0.625rem;
+    --line-height-xxs: 1.15rem;
+    --font-size-xs: 0.75rem;
+    --line-height-xs: 1.1571rem;
+    --font-size-xsm: 0.75rem;
+    --line-height-xsm: 1.2rem;
+    --font-size-sm: 0.8594rem;
+    --line-height-sm: 1.3125rem;
+    --font-size-2lg: 1.125rem;
+    --line-height-2lg: 1.5rem;
+    --font-size-xl: 1.2375rem;
+    --line-height-xl: 2.0625rem;
+    --font-size-1xl: 1.5rem;
+    --line-height-1xl: 2rem;
+    --font-size-2xl: 1.625rem;
+    --line-height-2xl: 2rem;
+
+    --page-gutter: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-size-lg: 1.125rem;
+    --line-height-lg: 1.5rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    --page-gutter: 60px;
+  }
+}

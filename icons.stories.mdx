@@ -1,0 +1,47 @@
+import { Meta, IconGallery, IconItem } from '@storybook/addon-docs';
+import { ReactComponent as Arrow } from '$src/assets/icons/arrow.svg';
+import { ReactComponent as ArrowCircle } from '$src/assets/icons/arrow-circle.svg';
+import { ReactComponent as Music } from '$src/assets/icons/music.svg';
+import { ReactComponent as Pause } from '$src/assets/icons/pause.svg';
+import { ReactComponent as Play } from '$src/assets/icons/play.svg';
+import { ReactComponent as PlaySolid } from '$src/assets/icons/play-solid.svg';
+
+<Meta title="Design/Icons" />
+
+# Icons
+
+<br />
+
+### Brand
+
+<IconGallery>
+  <IconItem name="Favicon">
+    <img src="/favicon.ico" />
+  </IconItem>
+  <IconItem name="App icon">
+    <img src="/icon.png" />
+  </IconItem>
+</IconGallery>
+
+### UI
+
+<IconGallery>
+  <IconItem name="Arrow">
+    <Arrow style={{ stroke: 'currentColor' }} />
+  </IconItem>
+  <IconItem name="Arrow Cirlce">
+    <ArrowCircle style={{ fill: 'currentColor' }} />
+  </IconItem>
+  <IconItem name="Music">
+    <Music />
+  </IconItem>
+  <IconItem name="Play">
+    <Play style={{ fill: 'currentColor' }} />
+  </IconItem>
+  <IconItem name="Pause">
+    <Pause style={{ fill: 'currentColor' }} />
+  </IconItem>
+  <IconItem name="Play Solid">
+    <PlaySolid />
+  </IconItem>
+</IconGallery>

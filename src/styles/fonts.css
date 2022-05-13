@@ -1,0 +1,88 @@
+/* Fonts */
+@layer base {
+  @font-face {
+    font-family: "CadizVariable";
+    src: url("/fonts/cadiz/cadiz-variable.woff2") format("woff2-variations");
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "CadizVariable";
+    src: url("/fonts/cadiz/cadiz-variable-italic.woff2")
+      format("woff2-variations");
+    font-weight: 300 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-SemiBold.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-SemiBoldItalic.woff2"), format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cadiz";
+    src: url("/fonts/cadiz/Cadiz-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+}

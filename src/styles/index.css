@@ -1,0 +1,66 @@
+@import "./fonts.css";
+@import "./variables.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: scrollbar;
+    overflow-y: scroll;
+  }
+
+  body {
+    @apply font-ui;
+    @apply bg-grey-100;
+    min-height: 100vh;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  * {
+    outline: none !important;
+  }
+}
+
+/* Mixins */
+@layer components {
+  .lazyrender {
+    /* content-visibility: auto; */
+  }
+
+  .richtext {
+    word-break: break-word;
+    & ol,
+    & ul {
+      padding-left: 1em;
+    }
+    & ol {
+      list-style: decimal;
+    }
+    & ul {
+      list-style: disc;
+    }
+    & li {
+      margin: 1em 0;
+    }
+    & blockquote {
+      @apply pl-12;
+    }
+  }
+
+  .subgrid {
+    @apply grid !col-span-full grid-cols-[inherit] auto-rows-min;
+  }
+  .label {
+    @apply tracking-[1.25px] uppercase font-ui md:tracking-tracked;
+  }
+  .anchor {
+    @apply relative inline break-all transition-colors border-b hover:text-red border-red;
+  }
+}

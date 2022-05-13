@@ -1,0 +1,85 @@
+import { Meta, Typeset } from '@storybook/addon-docs';
+const cadiz = {
+    family: 'Cadiz',
+    sizes: [16, 18, 24]
+  },
+  fournier = {
+    family: 'psfournier-std-petit',
+    sizes: [16, 18, 24]
+  },
+  clarendon = {
+    family: 'clarendon-text-pro',
+    sizes: [32, 48, 72]
+  },
+  headingSample = `Heading Text`,
+  bodySample = `Sapien tortor nam vehicula iaculis mattis`;
+
+<Meta title="Design/Typography" />
+
+# Typography
+
+## Cadiz
+
+Cadiz is an elegant, space-saving typeface that contains many details of early 20th Century typefaces. It's used for UI labels throughout the timeline.
+
+### Regular
+
+<Typeset
+  fontWeight={400}
+  fontFamily={cadiz.family}
+  fontSizes={cadiz.sizes}
+  sampleText={bodySample}
+/>
+
+### Semibold
+
+<Typeset
+  fontWeight={500}
+  fontFamily={cadiz.family}
+  fontSizes={cadiz.sizes}
+  sampleText={bodySample}
+/>
+
+### Bold
+
+<Typeset
+  fontWeight={700}
+  fontFamily={cadiz.family}
+  fontSizes={cadiz.sizes}
+  sampleText={bodySample}
+/>
+
+### Black
+
+<Typeset
+  fontWeight={900}
+  fontFamily={cadiz.family}
+  fontSizes={cadiz.sizes}
+  sampleText={bodySample}
+/>
+
+## PS Fournier Petit
+
+A French Traditional serif font, PS Fournier Petit is used for body text in stories, genres, etc.
+
+### Regular
+
+<Typeset
+  fontWeight={400}
+  fontFamily={fournier.family}
+  fontSizes={fournier.sizes}
+  sampleText={bodySample}
+/>
+
+## Clarendon
+
+Clarendon Text is a contemporary remake of the truly classic slab serif typeface with a distinctively clear and legible visibility. It's used for headings and display text.
+
+### Bold
+
+<Typeset
+  fontWeight={700}
+  fontFamily={clarendon.family}
+  fontSizes={clarendon.sizes}
+  sampleText={headingSample}
+/>

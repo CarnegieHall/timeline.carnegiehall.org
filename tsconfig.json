@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    // Modules
+    "moduleResolution": "node",
+    "target": "esnext",
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "error",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+
+    // Type checking
+    "strict": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "lib": ["dom", "esnext"],
+    "jsxImportSource": "react",
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+
+    // Compilation
+    "noEmit": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "$src/*": ["./src/*"],
+      "$types/*": ["./@types/*"],
+      "$storybook/*": ["./.storybook/*"]
+    }
+  },
+  "include": ["src", "@types", "./.storybook/**/*"],
+  "exclude": []
+}

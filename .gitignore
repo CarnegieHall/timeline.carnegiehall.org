@@ -1,0 +1,20 @@
+# Deps
+node_modules
+
+# Runtime
+/.next
+.env*
+*.log*
+
+# Build
+/build
+/storybook
+/out
+/public/sw.js
+/public/workbox*
+/public/sitemap.xml
+/public/robots.txt
+
+# Misc
+.DS_Store
+.vercel
