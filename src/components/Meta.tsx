@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { SITE_URL } from '../lib/consts';
 import { resolveUrl } from '../lib/utils';
 
 export type MetaProps = {
@@ -9,13 +9,15 @@ export type MetaProps = {
   /** Page description */
   description?: string;
   /** Cover image (used for social networks) */
-  cover?: string;
+  image?: string;
+  /** Optional keywords */
+  keywords?: string;
 };
 
 /**
  * Sets a page's <head> meta data
  */
-export function Meta({ title, description, cover }: MetaProps) {
+export function Meta({ title, description, image, keywords }: MetaProps) {
   const { pathname, locale, defaultLocale, query } = useRouter();
   let resolvedPathName = pathname;
 
@@ -27,23 +29,32 @@ export function Meta({ title, description, cover }: MetaProps) {
       ))
   );
 
-  const resolvedCover = cover && (resolveUrl(cover, SITE_URL || '') as string),
+  const resolvedCover =
+      image &&
+      (resolveUrl(image, process.env.NEXT_PUBLIC_SITE_URL || '') as string),
     resolvedLocation =
       locale === defaultLocale
-        ? `${SITE_URL}${resolvedPathName}`
-        : `${SITE_URL}/${locale}${resolvedPathName}`;
+        ? `${process.env.NEXT_PUBLIC_SITE_URL}${resolvedPathName}`
+        : `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}${resolvedPathName}`;
 
   return (
-    <NextSeo
-      title={title}
-      description={description}
-      canonical={resolvedLocation}
-      openGraph={{
-        url: resolvedLocation,
-        title,
-        description,
-        images: resolvedCover ? [{ url: resolvedCover }] : []
-      }}
-    />
+    <>
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={resolvedLocation}
+        openGraph={{
+          url: resolvedLocation,
+          title,
+          description,
+          images: resolvedCover ? [{ url: resolvedCover }] : []
+        }}
+      />
+      {keywords && (
+        <Head>
+          <meta name="keywords" content={keywords} />
+        </Head>
+      )}
+    </>
   );
 }

@@ -1,7 +1,3 @@
-export const SITE_URL =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000'
-    : process.env.NEXT_PUBLIC_SITE_URL;
 export const CMS_API = process.env.NEXT_PUBLIC_CMS_API;
 export const MUSICKIT_SCRIPT = `https://js-cdn.music.apple.com/musickit/v1/musickit.js`;
 
@@ -30,6 +26,7 @@ export const GRID_GAP: number = 80;
 export const STROKE_DASH_ARRAY: number = 1;
 export const LINK_TRIANGLE_SIZE: number = 7;
 export const YEAR_RANGE_KEY: string = 'yearRange';
+export const SHOW_CROSS_LINK_KEY: string = 'showCrossLinks';
 
 export const DIRECT_LINK_KEYS = {
   source: 'influenced',

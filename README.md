@@ -9,21 +9,21 @@ Backend code available at [github.com/CarnegieHall/timeline.carnegiehall.org-cms
 ### 1.0.0
 
 - Initial release based on the code of [The Timeline of African American Music](https://timeline.carnegiehall.org) released on January 2022.
--  Code contains structural elements but not specific data (images, text, values) associated with the Timeline of African American Music.
+- Code contains structural elements but not specific data (images, text, values) associated with the Timeline of African American Music.
 - This code is provided “as is” and for you to use at your own risk. The information included in the contents of this repository is not necessarily complete. Carnegie Hall offers the scripts as-is and makes no representations or warranties of any kind.
 - Support or maintenance for use and modification is not provided. Future updates will be released at will.
 
 ## Local development
 
 - Clone this repository
-- Install dependencies with `npm`
-- Run `npm dev` to start up local development server on `localhost:3000`
-- Work on the design system with `npm run storybook`, on `localhost:3002`
-- Build locally with `npm run build`
+- Install dependencies with `pnpm`
+- Run `pnpm dev` to start up local development server on `localhost:3000`
+- Work on the design system with `pnpm run storybook`, on `localhost:3002`
+- Build locally with `pnpm build`
 
 ## Built with
 
-- NextJS 11 / React 17 / Webpack 5
+- NextJS 13 / React 18
 - Typescript
 - Tailwind CSS
 - [Storybook](https://storybook.js.org/) for design system documentation
